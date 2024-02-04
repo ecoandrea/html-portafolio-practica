@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!--codificacion-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--para que sea adaptable-->
+    <title>Portafolio criszDev</title>
+
+    <meta name="description" content="Portafolio de Cristina criszDev"> <!--es lo que sale en google al buscar-->
+
+    <meta property="og:title" content="Portafolio de programadora"><!--Open Graph es de Meta-->
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="green">
+
+    <link rel="alternate" href="https://criszdev.com/en" hreflang="en-GB">
+    <!--alternativa por ej la pagina es en ingles y esta en espanol-->
+    <link rel="icon" type="image/jpg" href="">
+    <link rel="canonical" href=""> <!--indica cual es la pagina principal-->
+    <style>
+        body {
+            background-color: rgb(200, 216, 226);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Portafolio de @criszDev</h1>
+
+        <nav>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a> <!--enlaces internos-->
+            <webpage href="https:criszDev.com" target="_blank" rel="noreferrer"></webpage>webpage</a>
+            <!--webpage no va a dar referencia o info por seguridad -->
+            <!--enlaces externos-->
+
+        </nav>
+    </header>
+
+    <!--
+
+<video controls src=""></video>
+<audio></audio>
+
+-->
+
+    <!--<iframe width="560" height="315" src="https://www.youtube.com"></iframe> -->
+
+    <dialog id="dialog">
+        <h2>Sabias que puedes abrir una modal asi?</h2>
+        <p>Y totalmente nativo!</p>
+        <button id="hide">Cerrar modal</button>
+    </dialog>
+
+    <button id="show"> Ver mas informacion</button>
+
+    <script>
+        window.show.addEventListener("click", () => {
+            window.dialog.showModal()
+        })
+
+        window.hide.addEventListener("click", () => {
+            window.dialog.close()
+        })
+    </script>
+
+    <main>
+        <p>3 anos de experiencia en programacion.<strong> Entusiasta en aprender nueva tecnologias</strong></p>
+
+        <h2 id="experiencia">Experiencia</h2>
+
+        <ul>
+            <li class="list-item">Didactica - 2022</li>
+            <li class="list-item" id="no se repite">Freelance - 2023-24</li>
+        </ul>
+
+        <a download href="/images/yo.jpg>" <img title="foto de Cristina" alt="foto de Cristina haciendo trecking"
+            src="foto"></a>
+
+        <h2 id="proyectos">Proyectos realizados</h2>
+
+        <aside>
+            <header>
+                <h3>Mis tecnologias <span>favoritas</span> </h3>
+            </header>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Node</li>
+            </ol>
+        </aside>
+
+        <div role="alert">
+            Haz click aca para salir!
+        </div>
+
+        <button> Haz click aqui</button>
+
+        <section>
+            <article>
+                <header>
+                    <h4>Sitio Web</h4>
+                </header>
+                <p>
+                <footer>
+                    <small>Tecnologias utilizadas: HTML, CSS, Javascript, Node</small>
+                </footer>
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Preguntas frecuentes</h2>
+
+            <details>
+                <summary>Que estudios tienes</summary>
+                <p>Estudie de forma autodidacta programacion, mis estudios formales son de medicina veterinaria</p>
+            </details>
+
+            <details>
+                <summary>Tienes algin hobby</summary>
+                <p>Me gusta hacer deporte como correr, andar en bicicleta y nadar , ademas del trecking, y aprender
+                    Chino y Portugues/p>
+            </details>
+
+            <details>
+                <summary>Cula es tu lenguaje favorito?</summary>
+                <p>Me gusta Javascript , es versatil y amigable</p>
+            </details>
+        </section>
+
+        <section>
+            <h2>Formulario de contacto</h2>
+
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Informacion personal</legend>
+                    <!--
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Cristina Zamora">
+
+            usando for para acceder
+-->
+                    <!--usando label -->
+                    <div>
+                        <label>Nombre:
+                            <input type="text" name="name" placeholder="Cristina Zamora" required pattern="">
+
+                        </label>
+                    </div>
+                    <div>
+                        <label>Email:
+                            <input type="email" name="email" placeholder="criszdev@test.com" required>
+                    </div>
+                    </label>
+                    <div>
+                </fieldset>
+                <fieldset>
+                    <legend>Informacion Adicional</legend>
+                    <div>
+                        <label>Telefono:
+                            <input type="tel" name="phone" placeholder="987654321" required pattern="[0-9]{9}">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Otros</legend>
+
+                    <div>
+                        <label for="why">Por que me quieres contactar?</label>
+                        <select name="why" id="why">
+                            <option value="1">Trabajo</option>
+                            <option value="2">Duda</option>
+                            <option value="3">Mas informacion></option>
+
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="terms">Acepta los terminos?</label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <datalist id="languagues">
+                        <option value="Javascript"></option>
+                        <option value="Python"></option>
+                        <option value="Java"></option>
+                        <option value="C#+"></option>
+                    </datalist>
+                    <label>
+                        Con que lenguaje quieres que te ayude?
+                        <input list="languagues" name="languagues">
+                    </label>
+                </div>
+                </fieldset>
+                <input type="submit" value="Enviar contacto">
+            </form>
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        Copyright 2024 - El portafolio perfecto
+    </footer>
+
+    <a href="mailto:criszdev@test.com">Enviame un correo</a>
+    <div>
+        <a href="tel: +56987654321">LLamar por telefono</a>
+        <a href="whatsapp://send?text=Hola">Contactame por Whatsapp</a>
+    </div>
+    <!--esto es un comentario-->
+</body>
+
+</html>
